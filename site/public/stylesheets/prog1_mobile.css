@@ -1,0 +1,33 @@
+/* prog1_mobile.css 
+ media query for mobile phones */
+
+@media screen and (max-width: 320px){
+
+    #matchFound{
+        display: block;
+        width: 175px;
+    }
+
+    img {
+        max-width: 90%;
+        max-height: 100%;
+        border: 1px solid #000;
+        /*margin-left: 10px; */
+        display: block;
+        margin: 0 auto;
+    }
+
+    #screen0, #screen1, #screen2 {
+        width: 205px;
+        height: 205px;
+        margin: 0 auto;
+        }
+
+    .buttonGroup{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
+}

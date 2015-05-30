@@ -1,0 +1,22 @@
+{
+  "name": "mixedst2",
+  "version": "1.0.0",
+  "description": "Basic javaScript game",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/auchomage/prog1.git"
+  },
+  "author": "auchomage",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/auchomage/prog1/issues"
+  },
+  "homepage": "https://github.com/auchomage/prog1",
+  "dependencies": {
+    "express": "^4.12.4"
+  }
+}

@@ -1,0 +1,36 @@
+doctype
+html
+  head
+    meta(charset="utf-8")
+    title Prog 1: A basic arcade game.
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    script(type="text/javascript" src="./javascripts/prog1.js")
+    //- Will load for all devices
+    link(type="text/css", rel="stylesheet", href="./stylesheets/prog1.css")
+
+    //- Will load for devices with a viewport less than or equal to 320px
+    //- ie smartphones
+    //- link(type="text/css", rel="stylesheet", href="stylesheets/prog1_mobile.css")
+
+  body
+    form(name="form1" action="")
+      div.rowOfScreens
+        h2(id="introTitle") Auchomage: Basic arcade game.
+        div(id="screen0")
+          img(src="/images/hyphen.jpg" id="img0" border="0" width="200" height="150")
+          input(type="button" name="bttn0" class="buttonGroup" onclick="return setDisplayBox(document.images[0]);" value="Press once.")
+
+        div(id="screen1")
+          img(src="/images/hyphen.jpg" id="img1" border="0" width="200" height="150")
+          input(type="button" name="bttn1" class="buttonGroup" onclick="return setDisplayBox(document.images[1]);" value="Press once.")
+
+        div(id="screen2")
+          img(src="/images/hyphen.jpg" id="img2" border="0" width="200" height="150")
+          input(type="button" name="bttn2" class="buttonGroup" onclick="return setDisplayBox(document.images[2]);" value="Press once.")
+
+        br
+        input(type="button" name="resetButton" class="resetButton" onclick="screenReset();" value="Click to reset the screens")
+        br
+        //-Congratulations space All 3 screens match, sadly there are no prizes
+        textarea(id="matchFound" rows="5" cols="26" )
+          | Congratulations!&#10All 3 screens match, sadly there are no prizes.
